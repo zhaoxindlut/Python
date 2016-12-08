@@ -32,7 +32,7 @@ def generate(num):
 if __name__ == '__main__':
     f = open(result, 'w')
     codes = generate(200)
-    code = os.sep.join(codes)
-    print code
-    f.write(os.sep.join(codes))
+    codes = '\n'.join(codes)
+    print codes
+    f.write(codes)
     f.close()
